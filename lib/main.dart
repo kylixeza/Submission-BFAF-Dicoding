@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:submission_bfaf/style/style.dart';
 import 'package:submission_bfaf/ui/detail_page.dart';
 import 'package:submission_bfaf/ui/home_page.dart';
-
-import 'model/restaurant.dart';
+import 'package:submission_bfaf/ui/search_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,8 +31,9 @@ class MyApp extends StatelessWidget {
       routes: {
         HomePage.routeName: (context) => HomePage(),
         DetailPage.routeName: (context) => DetailPage(
-          restaurant: ModalRoute.of(context)?.settings.arguments as Restaurant,
+          restaurantId: ModalRoute.of(context)?.settings.arguments as String,
         ),
+        SearchPage.routeName: (context) => SearchPage()
       },
     );
   }

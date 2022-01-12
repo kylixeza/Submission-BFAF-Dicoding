@@ -34,3 +34,9 @@ final TextTheme cookiezTextTheme = TextTheme(
   overline: GoogleFonts.poppins(
       fontSize: 10, fontWeight: FontWeight.w400, letterSpacing: 1.5),
 );
+
+final iconSearchOn = Icons.search;
+final iconSearchFail = Icons.search_off;
+final iconSearchAgain = Icons.youtube_searched_for;
+
+final error = Icons.error;
