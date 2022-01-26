@@ -42,6 +42,11 @@ dependencies:
   dio: ^4.0.4
   provider: ^5.0.0
   floor: ^1.2.0
+  intl: ^0.17.0
+  android_alarm_manager_plus: ^2.0.3
+  flutter_local_notifications: ^5.0.0
+  rxdart: ^0.26.0
+  shared_preferences: ^2.0.5
 
 dev_dependencies:
   flutter_test:
@@ -50,8 +55,9 @@ dev_dependencies:
   retrofit_generator: any
   build_runner: any
   json_serializable: any
-  flutter_launcher_icons: "^0.9.2"
+  flutter_launcher_icons: ^0.9.1
   floor_generator: ^1.2.0
+  mockito: ^5.0.16
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -59,6 +65,11 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/cookiez_icon.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -72,9 +83,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/icons/cookiez_icon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
